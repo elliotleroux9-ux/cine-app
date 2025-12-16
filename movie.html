@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du film</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">Cinéma Village</a>
+            <button id="theme-toggle" title="Basculer le thème">🌙</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Tendances</a></li>
+            <li><a href="search.html">Recherche</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container movie-page">
+    <a href="javascript:history.back()" class="btn-back">← Retour</a>
+    <div id="movie-details"></div>
+</main>
+
+<script type="module" src="src/js/movie.js"></script>
+<script src="src/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films tendances</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">Cinéma Village</a>
+            <button id="theme-toggle" title="Basculer le thème">🌙</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Tendances</a></li>
+            <li><a href="search.html">Recherche</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h1>Films tendances</h1>
+    <div class="carousel-container">
+        <button class="carousel-btn left" id="scroll-left-trending"></button>
+        <div id="trending-movies" class="movie-grid"></div>
+        <button class="carousel-btn right" id="scroll-right-trending"></button>
+    </div>
+    <button id="load-more" class="btn">Charger plus</button>
+
+    <h1>Films aléatoires</h1>
+    <div class="carousel-container">
+        <button class="carousel-btn left" id="scroll-left-random"></button>
+        <div id="random-movies" class="movie-grid"></div>
+        <button class="carousel-btn right" id="scroll-right-random"></button>
+    </div>
+    <button id="load-random" class="btn">Autres films</button>
+</main>
+
+<script type="module" src="src/js/index.js"></script>
+<script src="src/js/theme.js"></script>
+</body>
+</html>
